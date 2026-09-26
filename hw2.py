@@ -2,8 +2,7 @@ import os
 import re
 from collections import Counter
 
-# Вказуємо прямий шлях до папки data, яку ви показували на скриншоті
-DATA_DIR = '/Users/safigaakberova/Downloads/corpus-master/data'
+DATA_DIR = os.path.dirname(os.path.abspath(__file__))
 LIST_FILE = os.path.join(DATA_DIR, 'test_data_set.txt')
 
 def read_corpus_files():
